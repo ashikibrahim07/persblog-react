@@ -1,0 +1,27 @@
+body {
+  background-color: #e4e9fd;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.form-control {
+  background-color: #003049;
+  padding: 10px;
+  color: #fdf0d5;
+}
+
+.btn-info {
+  background-color: #7eb2dd;
+  color: #003049;
+}
+
+.btn-info:active {
+  transform: scale(0.95);
+}
+
+footer {
+  padding-top: 130px;
+}

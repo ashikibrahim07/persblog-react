@@ -1,0 +1,107 @@
+/* Home.css */
+
+/* Container Styles */
+.container-title {
+  margin-top: 100px;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* Button Styles */
+.create-post-btn {
+  background-color: #06d6a0;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.create-post-btn:hover {
+  background-color: #05b58d;
+}
+
+/* Card Styles */
+.card-body-bg {
+  background-color: hsla(205, 87%, 94%, 0.179);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* Set a fixed height for all cards */
+  height: 300px; /* Adjust this value as needed */
+  display: flex;
+  flex-direction: column; /* Ensure children stack vertically */
+}
+
+/* Ensure title area has a consistent height */
+.card-top-title {
+  height: 100px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  cursor: pointer;
+  color: rgb(66, 54, 54);
+}
+
+/* Style adjustments for card content */
+.card-content {
+  flex-grow: 1; /* This allows the content area to take up available space */
+  padding: 15px; /* Add some padding for aesthetics */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Adjust styles for the read more link */
+.card-read-more {
+  cursor: pointer;
+  color: #2196f3;
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-edit {
+  background-color: #ffd166;
+  color: #000;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-edit:hover {
+  background-color: #fdbf1d;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #ef476f;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+  background-color: #d73554;
+  color: white;
+}
+
+/* Post Date and Author */
+.post-date {
+  margin-left: 95px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.post-author {
+  margin-left: 125px;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+/* Loading Styles */
+.loading {
+  text-align: center;
+  margin: 40px 0;
+}

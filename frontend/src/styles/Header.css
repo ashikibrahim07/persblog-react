@@ -1,0 +1,37 @@
+.appBar {
+  background-color: #f7f7f7 !important; /* Light Gray Background */
+  color: #333333; /* Dark Gray Text */
+}
+
+.navButton {
+  color: #333333 !important; /* Dark Gray Text */
+  margin: 0 10px;
+}
+
+.navButton:hover {
+  background-color: rgba(0, 0, 0, 0.08); /* Dark Gray Hover Effect */
+}
+
+.logo {
+  color: #333333; /* Dark Gray Text for Logo */
+  text-decoration: none; /* Remove underline */
+}
+
+.logoutButton {
+  color: #d32f2f; /* White Text for Logout Button */
+  background-color: inherit; /* Red Background */
+  border: 1px solid #d32f2f;
+  border-radius: 5px;
+}
+
+.loginButton {
+  color: #1976d2; /* White Text for Login Button */
+  background-color: inherit; /* Blue Background */
+  border: 1px solid #1976d2;
+  border-radius: 5px;
+}
+
+.logoutButton:hover,
+.loginButton:hover {
+  opacity: 0.8; /* Slightly darker on hover */
+}
