@@ -1,0 +1,29 @@
+"use strict";(self.webpackChunkpersonal_blog=self.webpackChunkpersonal_blog||[]).push([[681],{1681:(e,t,r)=>{r.r(t),r.d(t,{default:()=>h});var a=r(5043),s=r(9424),n=r(4496),i=r(7701),o=r(1906),l=r(1637),c=r(3216),d=r(9894),u=r(6213),m=r(579);const h=()=>{const e=(0,c.Zp)(),[t,r]=(0,a.useState)({title:"",content:""}),[h,p]=(0,a.useState)(!1),[f,v]=(0,a.useState)(null);(0,a.useEffect)((()=>{r({title:"",content:""}),console.log("CreatePost component mounted")}),[]);return(0,m.jsxs)(m.Fragment,{children:[(0,m.jsxs)(s.A,{component:"main",maxWidth:"sm",style:{marginTop:"100px"},children:[(0,m.jsx)(n.A,{variant:"h5",align:"center",className:"mb-3",children:"Create a New Post"}),f&&(0,m.jsx)(n.A,{variant:"body1",color:"error",align:"center",className:"mb-2",children:f}),(0,m.jsxs)("form",{onSubmit:async a=>{if(a.preventDefault(),t.title.trim()&&t.content.trim()){p(!0),v(null);try{const a=u.A.CancelToken.source(),s=setTimeout((()=>{a.cancel(),p(!1),v("Request timed out. Please try again.")}),1e4),n=await u.A.post("http://localhost:4000/api/posts",{...t},{cancelToken:a.token});clearTimeout(s),console.log("Post created successfully!",n.data),r({title:"",content:""}),e("/")}catch(f){console.error("Error creating post:",f),u.A.isCancel(f)?v("Request was canceled due to timeout."):v("Failed to create the post. Please try again.")}finally{p(!1)}}else alert("Please fill in both the title and content fields.")},children:[(0,m.jsx)(i.A,{variant:"outlined",margin:"normal",required:!0,fullWidth:!0,label:"Title",value:t.title,onChange:e=>r({...t,title:e.target.value}),autoFocus:!0}),(0,m.jsx)(i.A,{variant:"outlined",margin:"normal",required:!0,fullWidth:!0,label:"Content",multiline:!0,rows:4,value:t.content,onChange:e=>r({...t,content:e.target.value})}),(0,m.jsx)(o.A,{type:"submit",fullWidth:!0,variant:"contained",color:"primary",disabled:h,children:h?(0,m.jsx)(l.A,{size:24}):"Create Post"})]})]}),(0,m.jsx)(d.A,{})]})}},9894:(e,t,r)=>{r.d(t,{A:()=>s});r(5043);var a=r(579);const s=()=>(0,a.jsx)("footer",{className:"footer",children:(0,a.jsx)("div",{className:"container",children:(0,a.jsxs)("div",{className:"col-md-4 d-flex align-items-center",children:[(0,a.jsx)("a",{href:"/",className:"footer-logo",children:(0,a.jsx)("svg",{className:"bi",width:"30",height:"24",children:(0,a.jsx)("use",{xlinkHref:"#bootstrap"})})}),(0,a.jsxs)("span",{className:"footer-text",children:["\xa9 ",(new Date).getFullYear()," PersBlog"]})]})})})},1637:(e,t,r)=>{r.d(t,{A:()=>S});var a=r(5043),s=r(8387),n=r(8610),i=r(3290),o=r(4535),l=r(6870),c=r(8249),d=r(6803),u=r(2445),m=r(2532),h=r(2372);function p(e){return(0,h.Ay)("MuiCircularProgress",e)}(0,m.A)("MuiCircularProgress",["root","determinate","indeterminate","colorPrimary","colorSecondary","svg","circle","circleDeterminate","circleIndeterminate","circleDisableShrink"]);var f=r(579);const v=44,g=i.i7`
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+`,x=i.i7`
+  0% {
+    stroke-dasharray: 1px, 200px;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -15px;
+  }
+
+  100% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -125px;
+  }
+`,y="string"!==typeof g?i.AH`
+        animation: ${g} 1.4s linear infinite;
+      `:null,k="string"!==typeof x?i.AH`
+        animation: ${x} 1.4s ease-in-out infinite;
+      `:null,A=(0,o.Ay)("span",{name:"MuiCircularProgress",slot:"Root",overridesResolver:(e,t)=>{const{ownerState:r}=e;return[t.root,t[r.variant],t[`color${(0,d.A)(r.color)}`]]}})((0,l.A)((e=>{let{theme:t}=e;return{display:"inline-block",variants:[{props:{variant:"determinate"},style:{transition:t.transitions.create("transform")}},{props:{variant:"indeterminate"},style:y||{animation:`${g} 1.4s linear infinite`}},...Object.entries(t.palette).filter((0,u.A)()).map((e=>{let[r]=e;return{props:{color:r},style:{color:(t.vars||t).palette[r].main}}}))]}}))),b=(0,o.Ay)("svg",{name:"MuiCircularProgress",slot:"Svg",overridesResolver:(e,t)=>t.svg})({display:"block"}),j=(0,o.Ay)("circle",{name:"MuiCircularProgress",slot:"Circle",overridesResolver:(e,t)=>{const{ownerState:r}=e;return[t.circle,t[`circle${(0,d.A)(r.variant)}`],r.disableShrink&&t.circleDisableShrink]}})((0,l.A)((e=>{let{theme:t}=e;return{stroke:"currentColor",variants:[{props:{variant:"determinate"},style:{transition:t.transitions.create("stroke-dashoffset")}},{props:{variant:"indeterminate"},style:{strokeDasharray:"80px, 200px",strokeDashoffset:0}},{props:e=>{let{ownerState:t}=e;return"indeterminate"===t.variant&&!t.disableShrink},style:k||{animation:`${x} 1.4s ease-in-out infinite`}}]}}))),S=a.forwardRef((function(e,t){const r=(0,c.b)({props:e,name:"MuiCircularProgress"}),{className:a,color:i="primary",disableShrink:o=!1,size:l=40,style:u,thickness:m=3.6,value:h=0,variant:g="indeterminate",...x}=r,y={...r,color:i,disableShrink:o,size:l,thickness:m,value:h,variant:g},k=(e=>{const{classes:t,variant:r,color:a,disableShrink:s}=e,i={root:["root",r,`color${(0,d.A)(a)}`],svg:["svg"],circle:["circle",`circle${(0,d.A)(r)}`,s&&"circleDisableShrink"]};return(0,n.A)(i,p,t)})(y),S={},w={},C={};if("determinate"===g){const e=2*Math.PI*((v-m)/2);S.strokeDasharray=e.toFixed(3),C["aria-valuenow"]=Math.round(h),S.strokeDashoffset=`${((100-h)/100*e).toFixed(3)}px`,w.transform="rotate(-90deg)"}return(0,f.jsx)(A,{className:(0,s.A)(k.root,a),style:{width:l,height:l,...w,...u},ownerState:y,ref:t,role:"progressbar",...C,...x,children:(0,f.jsx)(b,{className:k.svg,ownerState:y,viewBox:"22 22 44 44",children:(0,f.jsx)(j,{className:k.circle,style:S,ownerState:y,cx:v,cy:v,r:(v-m)/2,fill:"none",strokeWidth:m})})})}))}}]);
+//# sourceMappingURL=681.5adae424.chunk.js.map
