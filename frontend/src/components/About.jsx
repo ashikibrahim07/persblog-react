@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/About.css"; // Import custom CSS
+import "../styles/About.css";
 
 const About = () => {
   return (
@@ -10,9 +10,19 @@ const About = () => {
         <h3>Welcome to My Personal Blog!</h3>
 
         <p className="about-text">
-          Hi there! I'm <strong>Ashik Ibrahim S</strong>, and this is my
-          personal blog where I share my thoughts, experiences, and insights on
-          various topics that interest me.
+          Hi there! I'm{" "}
+          <strong>
+            <a
+              href="https://ashikibrahim.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              Ashik Ibrahim S
+            </a>
+          </strong>
+          , and this is my personal blog where I share my thoughts, experiences,
+          and insights on various topics that interest me.
         </p>
 
         <p className="about-text">

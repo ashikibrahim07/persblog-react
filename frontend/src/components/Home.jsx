@@ -20,6 +20,15 @@ const Home = ({ isAdmin }) => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
+  const defaultPost = {
+    id: "default",
+    title: "Temporary Post",
+    content:
+      "Due to an error fetching the posts, you are only seeing this default post. Please try again later.",
+    posted_at: new Date().toISOString(),
+    author: "PersBlog",
+  };
+
   const fetchPosts = async () => {
     try {
       const response = await axios.get("http://localhost:4000/api/posts");
@@ -27,6 +36,7 @@ const Home = ({ isAdmin }) => {
     } catch (error) {
       console.error("Error fetching posts:", error);
       setError("Failed to load posts. Please try again later.");
+      setPosts([defaultPost]);
     } finally {
       setLoading(false);
     }
