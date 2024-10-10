@@ -52,7 +52,7 @@ const PostView = () => {
               variant="h4"
               component="h1"
               align="center"
-              style={{ marginTop: "-80px", marginBottom: "50px" }}
+              style={{ marginTop: "30px", marginBottom: "50px" }}
               gutterBottom
             >
               {post.title}
